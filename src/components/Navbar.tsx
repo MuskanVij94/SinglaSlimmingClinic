@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Heart, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,15 +41,13 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <a href="#home" className="flex items-center group">
-            <span 
-              className={`text-xl font-bold transition-colors duration-300 ${
-                scrolled ? 'text-blue-700 dark:text-white' : 'text-white'
-              } group-hover:text-blue-400`}
-            >
-              Singla Slimming Clinic
-            </span>
-          </a>
+           <a href="#home" className="flex items-center group">
+      <img 
+        src="images/logo.png" // Replace with your actual logo path
+        alt="Singla Slimming Clinic Logo"
+        className="h-11 w-auto transition-transform duration-300:scale-105"
+      />
+    </a>
           
           <div className="hidden lg:flex items-center space-x-8">
             {['Home', 'About', 'Services', 'Why Choose Us', 'Contact'].map((item) => (

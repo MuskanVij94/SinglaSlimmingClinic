@@ -1,5 +1,5 @@
 import React from 'react';
-import {Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -20,9 +20,16 @@ const Footer = () => {
               <a href="https://www.instagram.com/singlaslimmingclinic/" target="_blank" className="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
+              <a
+                href="https://www.youtube.com/@SinglaSlimmingclinic"  // Update with your exact channel URL
+                target="_blank"
+                className="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+              >
+                <Youtube className="h-5 w-5 text-white" />
+              </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
@@ -33,7 +40,7 @@ const Footer = () => {
               <li><a href="#contact" className="text-blue-200 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3">
@@ -43,19 +50,27 @@ const Footer = () => {
               <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Skin Tightening</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-6">Our Branches</h3>
-            <ul className="space-y-3">
-              <li className="text-blue-200">Gurgaon</li>
-              <li className="text-blue-200">Ludhiana</li>
-              <li className="text-blue-200">Jalandhar</li>
-              <li className="text-blue-200">Firozpur</li>
-              <li className="text-blue-200">Mohali</li>
-            </ul>
+            <div className="grid grid-cols-2 gap-2 text-blue-200">
+              <span>Gurugram</span> {/* Corrected spelling */}
+              <span>Delhi NCR</span>
+              <span>Amritsar</span>
+              <span>Jalandhar</span>
+              <span>Firozpur</span>
+              <span>Ludhiana</span>
+              <span>Mohali</span>
+              <span>Mumbai</span> {/* Corrected from "Bomaby" */}
+              <span>Jaipur</span>
+              <span>Zirakpur</span>
+            </div>
           </div>
+
+
+
         </div>
-        
+
         <div className="border-t border-blue-800 pt-8 mt-8 text-center text-blue-300 text-sm">
           <p>&copy; {new Date().getFullYear()} Singla Slimming Clinic. All rights reserved.</p>
         </div>

@@ -30,9 +30,9 @@ const Hero = () => {
               Singla Slimming Clinic Now in Gurgaon
             </h1>
             <p className="text-xl text-blue-50 mb-8 leading-relaxed">
-              Experience our proven, non-invasive weight management solutions now in Gurgaon. Join over 250,000 success stories.
-            </p>
+1,32,232 patients have transformed their bodies with our doctor-led, non-surgical slimming method — based on medical science.            </p>
           </div>
+          
           
           <div className={`flex flex-col sm:flex-row gap-4 transform transition-all duration-1000 delay-300 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <a 
@@ -52,15 +52,15 @@ const Hero = () => {
           
           <div className={`mt-16 flex flex-wrap gap-6 transform transition-all duration-1000 delay-500 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="bg-white/10 dark:bg-white/5 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20">
-              <p className="text-white font-bold text-3xl">250,000+</p>
-              <p className="text-blue-100 text-sm">Happy Clients</p>
+              <p className="text-white font-bold text-3xl">132,232</p>
+              <p className="text-blue-100 text-sm">Success Stories</p>
             </div>
             <div className="bg-white/10 dark:bg-white/5 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20">
-              <p className="text-white font-bold text-3xl">15+ Years</p>
-              <p className="text-blue-100 text-sm">of Excellence</p>
+              <p className="text-white font-bold text-3xl">21+ Years</p>
+              <p className="text-blue-100 text-sm">of Legacy</p>
             </div>
             <div className="bg-white/10 dark:bg-white/5 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20">
-              <p className="text-white font-bold text-3xl">5 Centers</p>
+              <p className="text-white font-bold text-3xl">9+ Clinics</p>
               <p className="text-blue-100 text-sm">Across India</p>
             </div>
           </div>

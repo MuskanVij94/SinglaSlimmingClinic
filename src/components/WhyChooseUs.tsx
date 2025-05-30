@@ -29,6 +29,7 @@ const TestimonialCard = ({ quote, name, result, image, delay }: { quote: string,
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const FeatureItem = ({ icon: Icon, title, description, delay }: { icon: any, title: string, description: string, delay: number }) => {
   const { ref, isVisible } = useInView({ threshold: 0.1 });
   
@@ -58,25 +59,50 @@ const WhyChooseUs = () => {
   
   const features = [
     {
-      icon: CheckCircle,
-      title: 'Proven Track Record',
-      description: 'Notable success stories, including clients losing 15 kg in 1 month and 95 kg in 13 months.'
-    },
-    {
-      icon: Award,
-      title: 'State-of-the-Art Technology',
-      description: 'Employing the latest equipment for optimal results in a safe, controlled environment.'
-    },
-    {
-      icon: Users,
-      title: 'Experienced Team',
-      description: 'Led by Dr. Anju Singla, our professionals are dedicated to your well-being and success.'
-    },
-    {
-      icon: LineChart,
-      title: 'Customized Programs',
-      description: 'Each treatment plan is tailored to individual needs and goals for maximum effectiveness.'
-    }
+    icon: CheckCircle,
+    title: 'Doctor-led Treatments',
+    description: 'Treatments supervised by doctors using advanced technology.'
+  },
+  {
+    icon: LineChart,
+    title: 'Customized Plans',
+    description: 'Plans tailored to your body, goals, and lifestyle.'
+  },
+  {
+    icon: Users,
+    title: '24×7 CMR Support',
+    description: 'Continuous support from your Care Manager Representative (CMR).'
+  },
+  {
+    icon: Award,
+    title: 'Safe & Non-Invasive',
+    description: 'Methods that are medically safe and non-invasive with real results.'
+  },
+  {
+    icon: CheckCircle,
+    title: 'Holistic Health Focus',
+    description: 'Treating root medical issues with focus on your overall well-being.'
+  },
+    // {
+    //   icon: CheckCircle,
+    //   title: 'Proven Track Record',
+    //   description: 'Notable success stories, including clients losing 15 kg in 1 month and 95 kg in 13 months.'
+    // },
+    // {
+    //   icon: Award,
+    //   title: 'State-of-the-Art Technology',
+    //   description: 'Employing the latest equipment for optimal results in a safe, controlled environment.'
+    // },
+    // {
+    //   icon: Users,
+    //   title: 'Experienced Team',
+    //   description: 'Led by Dr. Anju Singla, our professionals are dedicated to your well-being and success.'
+    // },
+    // {
+    //   icon: LineChart,
+    //   title: 'Customized Programs',
+    //   description: 'Each treatment plan is tailored to individual needs and goals for maximum effectiveness.'
+    // }
   ];
   
   const testimonials = [

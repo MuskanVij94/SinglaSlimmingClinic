@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Phone, X } from 'lucide-react';
+import { Phone, X, MessageCircle } from 'lucide-react';
 
 const FloatingContact = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
       {isOpen && (
-        <div className="bg-white rounded-lg shadow-xl p-4 mb-4 w-64 animate-fade-in">
+        <div className="bg-white rounded-lg shadow-xl p-4 mb-2 w-64 animate-fade-in">
           <div className="flex justify-between items-center mb-4">
             <h3 className="font-bold text-gray-900">Contact Us</h3>
             <button 
@@ -37,7 +37,10 @@ const FloatingContact = () => {
           </a>
         </div>
       )}
-      
+
+   
+
+      {/* Phone toggle button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className={`w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
@@ -46,6 +49,15 @@ const FloatingContact = () => {
       >
         <Phone className="h-6 w-6 text-white" />
       </button>
+         {/* WhatsApp button */}
+      <a
+        href="https://wa.me/918146300892"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg bg-green-500 hover:bg-green-600 transition-all duration-300"
+      >
+        <MessageCircle className="h-6 w-6 text-white" />
+      </a>
     </div>
   );
 };

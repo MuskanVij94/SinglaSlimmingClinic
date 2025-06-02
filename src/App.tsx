@@ -7,6 +7,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
+import IdealWeight from './components/IdealWeight';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Services />
         <WhyChooseUs />
+        <IdealWeight />
         <Contact />
       </main>
       <Footer />

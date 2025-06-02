@@ -8,7 +8,7 @@ const TestimonialCard = ({ quote, name, result, image, delay }: { quote: string,
   return (
     <div
       ref={ref}
-      className={`bg-white p-6 rounded-xl shadow-lg transition-all duration-1000 ease-out text-center w-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      className={`bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg transition-all duration-1000 ease-out text-center w-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
@@ -126,7 +126,7 @@ const WhyChooseUs = () => {
 
 
   return (
-    <section id="why-choose-us" className="py-20 bg-blue-50">
+    <section id="why-choose-us" className="py-20 bg-blue-50 py-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 md:px-6">
         <div
           ref={ref}

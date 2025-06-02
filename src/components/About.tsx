@@ -29,7 +29,7 @@ const About = () => {
             </h2>
             
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Singla Slimming Clinic is a wellness center specializing in non-invasive weight loss solutions. Established in 2003 by Dr. Singla, the clinic has expanded its presence across multiple cities in India like Ludhiana, Jalandhar, Mohali, Zirakpur, and Amritsar. <span className="font-bold">Now we are in Gurgaon and Delhi</span>.
+              Singla Slimming Clinic is a wellness center specializing in non-invasive weight loss solutions. Established in 2003 by Dr. Singla, the clinic has expanded its presence across multiple cities in India like Ludhiana, Jalandhar, Mohali, Zirakpur, Amritsar, Greater Kailash Delhi & Ferozepur.
             </p>
 
             <p className="text-blue-700 font-semibold text-lg mb-4">

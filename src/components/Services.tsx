@@ -9,6 +9,7 @@ const ServiceCard = ({
   imageUrl, 
   index 
 }: { 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   icon: any, 
   title: string, 
   description: string, 
@@ -51,8 +52,14 @@ const Services = () => {
   
   const services = [
     {
+      icon: Heart,
+      title: 'Treatment at Root Cause', 
+      description: 'We treat obesity at its root cause resulting in sustainable weight loss & improving overall health by right diagonsis of blood reports',
+      imageUrl: 'https://images.pexels.com/photos/5069436/pexels-photo-5069436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    },
+    {
       icon: Zap,
-      title: 'Ultrasound Fat Cavitation',
+      title: 'Advanced Slimming Technologies',
       description: 'Utilizing advanced ultrasound technology to naturally break down fat cells without pain or invasive procedures.',
       imageUrl: 'https://images.pexels.com/photos/8460157/pexels-photo-8460157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     },
@@ -66,14 +73,8 @@ const Services = () => {
       icon: HeartPulse,
       title: 'Body Contouring',
       description: 'Non-surgical methods to shape and tone your body, targeting specific areas for a more defined silhouette.',
-      imageUrl: 'https://images.pexels.com/photos/3757964/pexels-photo-3757964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imageUrl: 'images/Body.jpg'
     },
-    {
-      icon: Heart,
-      title: 'Skin Tightening',
-      description: 'Enhancing skin elasticity post weight loss with advanced technologies for a more youthful appearance.',
-      imageUrl: 'https://images.pexels.com/photos/5069436/pexels-photo-5069436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-    }
   ];
 
   return (

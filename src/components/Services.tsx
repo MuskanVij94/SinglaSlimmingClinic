@@ -55,7 +55,7 @@ const Services = () => {
       icon: Heart,
       title: 'Treatment at Root Cause', 
       description: 'We treat obesity at its root cause resulting in sustainable weight loss & improving overall health by right diagonsis of blood reports',
-      imageUrl: 'https://images.pexels.com/photos/5069436/pexels-photo-5069436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imageUrl: 'https://www.cambridgetherapeutics.com.sg/wp-content/uploads/2021/08/Cambridge-Therapeutics-Do-Slimming-Treatments-Really-Work-1.jpg'
     },
     {
       icon: Zap,

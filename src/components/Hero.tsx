@@ -56,7 +56,7 @@ const Hero = () => {
               <p className="text-blue-100 text-sm">Success Stories</p>
             </div>
             <div className="bg-white/10 dark:bg-white/5 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20">
-              <p className="text-white font-bold text-3xl">21+ Years</p>
+              <p className="text-white font-bold text-3xl">22+ Years</p>
               <p className="text-blue-100 text-sm">of Legacy</p>
             </div>
             <div className="bg-white/10 dark:bg-white/5 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20">

@@ -11,7 +11,7 @@ const Footer = () => {
               <span className="text-xl font-bold">Singla Slimming Clinic</span>
             </div>
             <p className="text-blue-200 mb-6">
-              Transforming lives with trusted wellness solutions since 2004. Your journey to a healthier you begins here.
+              Transforming lives with trusted wellness solutions since 2003. Your journey to a healthier you begins here.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/singlaslimmingclinicludhiana/" target="_blank" className="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
@@ -44,7 +44,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3">
-              <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Ultrasound Fat Cavitation</a></li>
+              <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Treatment at Root Cause</a></li>
               <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Personalized Diet Plans</a></li>
               <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Body Contouring</a></li>
               <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Skin Tightening</a></li>
@@ -61,8 +61,6 @@ const Footer = () => {
               <span>Firozpur</span>
               <span>Ludhiana</span>
               <span>Mohali</span>
-              <span>Mumbai</span> {/* Corrected from "Bomaby" */}
-              <span>Jaipur</span>
               <span>Zirakpur</span>
             </div>
           </div>

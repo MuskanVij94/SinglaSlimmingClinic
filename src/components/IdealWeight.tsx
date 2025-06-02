@@ -6,29 +6,34 @@ const IdealWeight = () => {
   const [showModal, setShowModal] = useState(false);
   const [gender, setGender] = useState('');
   const [heightFt, setHeightFt] = useState('');
+const [heightIn, setHeightIn] = useState('');
+
   const [idealWeight, setIdealWeight] = useState<number | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
 
-    const height = parseFloat(heightFt);
-    if (!gender || isNaN(height)) {
-      setIdealWeight(null);
-      return;
-    }
+  const feet = parseFloat(heightFt);
+  const inches = parseFloat(heightIn);
 
-    const baseHeightInInches = height * 12;
-    const inchesOver5ft = Math.max(baseHeightInInches - 60, 0); // 5 feet = 60 inches
+  if (!gender || isNaN(feet) || isNaN(inches)) {
+    setIdealWeight(null);
+    return;
+  }
 
-    let weight = 0;
-    if (gender === 'male') {
-      weight = 50 + 2.3 * inchesOver5ft;
-    } else {
-      weight = 45.5 + 2.3 * inchesOver5ft;
-    }
+  const totalHeightInInches = feet * 12 + inches;
 
-    setIdealWeight(parseFloat(weight.toFixed(2)));
-  };
+  let weight = 0;
+  if (gender === 'male') {
+    weight = totalHeightInInches * 1; // 1kg per inch
+  } else {
+    weight = totalHeightInInches * 0.9; // 900g per inch
+  }
+
+  setIdealWeight(parseFloat(weight.toFixed(2)));
+};
+
+
 
   return (
     <section
@@ -112,16 +117,28 @@ const IdealWeight = () => {
                 </label>
               </div>
 
-              <div>
-                <label className="block font-medium mb-1">Height (ft):</label>
-                <input
-                  type="number"
-                  step="0.1"
-                  value={heightFt}
-                  onChange={(e) => setHeightFt(e.target.value)}
-                  className="w-full border rounded px-3 py-2"
-                />
-              </div>
+             <div>
+  <label className="block font-medium mb-1">Height:</label>
+  <div className="flex gap-2">
+    <input
+      type="number"
+      step="1"
+      placeholder="Feet"
+      value={heightFt}
+      onChange={(e) => setHeightFt(e.target.value)}
+      className="w-1/2 border rounded px-3 py-2"
+    />
+    <input
+      type="number"
+      step="1"
+      placeholder="Inches"
+      value={heightIn}
+      onChange={(e) => setHeightIn(e.target.value)}
+      className="w-1/2 border rounded px-3 py-2"
+    />
+  </div>
+</div>
+
 
               {idealWeight !== null && (
                 <div className="bg-green-100 text-green-800 p-3 rounded text-center font-semibold">

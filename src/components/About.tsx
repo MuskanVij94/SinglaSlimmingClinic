@@ -57,7 +57,7 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-blue-50 p-4 rounded-lg">
-                <div className="text-blue-700 font-bold text-2xl mb-1">21+</div>
+                <div className="text-blue-700 font-bold text-2xl mb-1">22+</div>
                 <div className="text-gray-700">Years of Experience</div>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">

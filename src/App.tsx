@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
 import IdealWeight from './components/IdealWeight';
+import Awards from './components/Awards';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Services />
         <WhyChooseUs />
+        <Awards/>
         <IdealWeight />
         <Contact />
       </main>

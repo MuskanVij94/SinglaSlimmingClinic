@@ -117,7 +117,7 @@ const WhyChooseUs = () => {
     },
     {
       quote:
-        "I lost 15kgs in 1 month, 25kgs in 2 months, 36kgs in 3 months & 7kgs in 7 months with the help of slimming technology & my skin stayed completely tight, zero sag.",
+        "I lost 15kgs in 1 month, 25kgs in 2 months, 36kgs in 3 months & 70kgs in 7 months with the help of slimming technology & my skin stayed completely tight, zero sag.",
       name: "Mr. Chirag Seda (22 years, Student)",
       result: "Lost 36kgs in 3 months",
       image: "images/3.png"

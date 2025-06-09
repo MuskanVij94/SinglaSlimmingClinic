@@ -6,32 +6,32 @@ const IdealWeight = () => {
   const [showModal, setShowModal] = useState(false);
   const [gender, setGender] = useState('');
   const [heightFt, setHeightFt] = useState('');
-const [heightIn, setHeightIn] = useState('');
+  const [heightIn, setHeightIn] = useState('');
 
   const [idealWeight, setIdealWeight] = useState<number | null>(null);
 
-const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
 
-  const feet = parseFloat(heightFt);
-  const inches = parseFloat(heightIn);
+    const feet = parseFloat(heightFt);
+    const inches = parseFloat(heightIn);
 
-  if (!gender || isNaN(feet) || isNaN(inches)) {
-    setIdealWeight(null);
-    return;
-  }
+    if (!gender || isNaN(feet) || isNaN(inches)) {
+      setIdealWeight(null);
+      return;
+    }
 
-  const totalHeightInInches = feet * 12 + inches;
+    const totalHeightInInches = feet * 12 + inches;
 
-  let weight = 0;
-  if (gender === 'male') {
-    weight = totalHeightInInches * 1; // 1kg per inch
-  } else {
-    weight = totalHeightInInches * 0.9; // 900g per inch
-  }
+    let weight = 0;
+    if (gender === 'male') {
+      weight = totalHeightInInches * 1; // 1kg per inch
+    } else {
+      weight = totalHeightInInches * 0.9; // 900g per inch
+    }
 
-  setIdealWeight(parseFloat(weight.toFixed(2)));
-};
+    setIdealWeight(parseFloat(weight.toFixed(2)));
+  };
 
 
 
@@ -42,9 +42,8 @@ const handleSubmit = (e: React.FormEvent) => {
       className="py-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800"
     >
       <div
-        className={`max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10 transition-opacity duration-1000 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}
+        className={`max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10 transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
       >
         {/* Left Content */}
         <div className="flex-1 text-center md:text-left">
@@ -117,27 +116,27 @@ const handleSubmit = (e: React.FormEvent) => {
                 </label>
               </div>
 
-             <div>
-  <label className="block font-medium mb-1">Height:</label>
-  <div className="flex gap-2">
-    <input
-      type="number"
-      step="1"
-      placeholder="Feet"
-      value={heightFt}
-      onChange={(e) => setHeightFt(e.target.value)}
-      className="w-1/2 border rounded px-3 py-2"
-    />
-    <input
-      type="number"
-      step="1"
-      placeholder="Inches"
-      value={heightIn}
-      onChange={(e) => setHeightIn(e.target.value)}
-      className="w-1/2 border rounded px-3 py-2"
-    />
-  </div>
-</div>
+              <div>
+                <label className="block font-medium mb-1">Height:</label>
+                <div className="flex gap-2">
+                  <input
+                    type="number"
+                    step="1"
+                    placeholder="Feet"
+                    value={heightFt}
+                    onChange={(e) => setHeightFt(e.target.value)}
+                    className="w-1/2 border rounded px-3 py-2"
+                  />
+                  <input
+                    type="number"
+                    step="1"
+                    placeholder="Inches"
+                    value={heightIn}
+                    onChange={(e) => setHeightIn(e.target.value)}
+                    className="w-1/2 border rounded px-3 py-2"
+                  />
+                </div>
+              </div>
 
 
               {idealWeight !== null && (

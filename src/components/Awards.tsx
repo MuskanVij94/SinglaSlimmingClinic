@@ -40,7 +40,7 @@ const Awards = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-5 px-5 ">
           {awards.map((src, index) => (
             <div
               key={index}
@@ -52,7 +52,7 @@ const Awards = () => {
               <img
                 src={src}
                 alt={`Award ${index + 1}`}
-                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
           ))}

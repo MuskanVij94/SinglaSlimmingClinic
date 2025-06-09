@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
 import IdealWeight from './components/IdealWeight';
 import Awards from './components/Awards';
+import Roadmap from './components/Roadmap';
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Services />
-        <WhyChooseUs />
         <Awards/>
+        <Services />
+        <Roadmap />
+        <WhyChooseUs />
         <IdealWeight />
         <Contact />
       </main>

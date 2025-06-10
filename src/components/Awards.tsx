@@ -4,7 +4,6 @@ import { useInView } from '../hooks/useInView';
 const awards = [
   '/images/IMG-20250609-WA0001.jpg',
   '/images/IMG-20250609-WA0003.jpg',
-//   '/images/IMG-20250609-WA0004.jpg',
   '/images/IMG-20250609-WA0005.jpg',
   '/images/IMG-20250609-WA0006.jpg',
   '/images/IMG-20250609-WA0007.jpg',
@@ -12,7 +11,6 @@ const awards = [
   '/images/IMG-20250609-WA0009.jpg',
   '/images/IMG-20250609-WA0010.jpg',
   '/images/IMG-20250609-WA0011.jpg',
-  // Add more paths as needed
 ];
 
 const Awards = () => {
@@ -23,9 +21,8 @@ const Awards = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div
           ref={ref}
-          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 ease-out ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <div className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-4 py-1 rounded-full text-sm font-medium mb-4">
             Our Achievements
@@ -40,20 +37,31 @@ const Awards = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-5 px-5 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:mx-5 md:px-5 ">
           {awards.map((src, index) => (
             <div
               key={index}
-              className={`rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-500 ease-out transform ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
+              className={`rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all duration-500 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
+              {/* <div className="w-full overflow-hidden sm:aspect-auto aspect-square sm:bg-white sm:flex sm:items-center sm:justify-center">
               <img
                 src={src}
                 alt={`Award ${index + 1}`}
-                className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full sm:h-full sm:object-contain md:h-60 md:object-cover transition-transform duration-500 group-hover:scale-105"
               />
+              </div> */}
+
+              <div className="w-full overflow-hidden sm:aspect-auto aspect-square bg-white sm:flex sm:items-center sm:justify-center">
+                <img
+                  src={src}
+                  alt={`Award ${index + 1}`}
+                  className="w-full h-full object-contain md:h-60 md:object-cover object-contain transition-transform duration-500"
+                />
+              </div>
+
+
             </div>
           ))}
         </div>

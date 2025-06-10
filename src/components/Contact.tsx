@@ -14,7 +14,7 @@ const ContactItem = ({ icon: Icon, title, details, link }: { icon: any, title: s
         {link ? (
           <a
             href={link}
-            className="text-gray-600 hover:text-blue-600 underline transition-colors duration-200"
+            className="text-gray-600 hover:text-blue-600 underline transition-colors duration-200 break-all"
           >
             {details}
           </a>
